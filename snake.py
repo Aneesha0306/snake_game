@@ -1,5 +1,5 @@
 from turtle import Turtle
-intial_pos = [(0, 0), (-20, 0), (-40, 0)]
+intialpos = [(0, 0), (-20, 0), (-40, 0)]
 move = 20
 UP = 90
 DOWN = 270
@@ -13,7 +13,7 @@ class Snake:
         self.head = self.segments[0]
 
     def createsnake(self):
-        for position in intial_pos:
+        for position in intialpos:
             self.add_segment(position)
 
     def add_segment(self,position):
